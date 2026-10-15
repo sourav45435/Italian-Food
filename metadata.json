@@ -1,0 +1,8 @@
+{
+  "name": "Remix Remix Cinema Paradiso - Italian Restaurant",
+  "description": "Cinema Paradiso authentic Italian restaurant in a classic vintage cinema setting, featuring exquisite dining, theater screenings, and fast delivery.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

@@ -1,0 +1,40 @@
+<svg viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="favSphere" cx="35%" cy="30%" r="68%" fx="30%" fy="26%">
+      <stop offset="0%" stop-color="#93d5ff"/>
+      <stop offset="20%" stop-color="#3b8fe8"/>
+      <stop offset="60%" stop-color="#1b52a8"/>
+      <stop offset="85%" stop-color="#103875"/>
+      <stop offset="100%" stop-color="#07224d"/>
+    </radialGradient>
+    <filter id="favShadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="8" stdDeviation="10" flood-opacity="0.32" flood-color="#0b2959"/>
+    </filter>
+  </defs>
+
+  <!-- Background subtle rounded soft square for crisp contrast on dark or light browser tabs -->
+  <rect width="512" height="512" rx="108" fill="#ffffff" />
+
+  <g transform="translate(18, 22)">
+    <!-- Top-Left Green Waves -->
+    <path d="M 85 170 C 130 170, 175 110, 240 108 C 272 106, 298 120, 310 130"
+          stroke="#40b49b" stroke-width="28" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M 85 224 C 130 224, 175 168, 242 165"
+          stroke="#40b49b" stroke-width="28" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <!-- Central 3D Blue Sphere -->
+    <circle cx="282" cy="202" r="92" fill="url(#favSphere)" filter="url(#favShadow)"/>
+
+    <!-- Right Yellow/Golden Waves -->
+    <path d="M 374 212 C 400 196, 436 172, 478 172"
+          stroke="#f2a632" stroke-width="28" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M 284 300 C 352 300, 410 232, 478 232"
+          stroke="#f2a632" stroke-width="28" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <!-- Brand Typography "Noi, la qualità" -->
+    <text x="76" y="318" fill="#15325b" font-family="-apple-system, BlinkMacSystemFont, 'Arial Black', sans-serif" font-weight="900" font-style="italic" font-size="64" letter-spacing="-2">Noi,</text>
+    <text x="180" y="394" fill="#15325b" font-family="-apple-system, BlinkMacSystemFont, 'Arial Black', sans-serif" font-weight="900" font-style="italic" font-size="68" letter-spacing="-2">la qualità</text>
+    <text x="456" y="360" fill="#15325b" font-family="Arial, sans-serif" font-weight="bold" font-size="24">®</text>
+    <text x="455" y="388" fill="#355787" font-family="Arial, sans-serif" font-weight="bold" font-style="italic" font-size="20">srl</text>
+  </g>
+</svg>

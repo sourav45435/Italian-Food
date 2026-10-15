@@ -1,0 +1,63 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Outfit', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  }
+
+  img {
+    image-rendering: auto;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    transform: translateZ(0);
+  }
+
+  svg {
+    shape-rendering: geometricPrecision;
+  }
+}
+
+.font-slab {
+  font-family: 'Alfa Slab One', 'Rye', Georgia, serif;
+  letter-spacing: 0.04em;
+}
+
+.font-cinema {
+  font-family: 'Cinzel', serif;
+}
+
+.font-serif-vintage {
+  font-family: 'Playfair Display', Georgia, serif;
+}
+
+/* Torn paper top and bottom edge shapes */
+.torn-paper-bottom {
+  position: relative;
+}
+.torn-paper-bottom::after {
+  content: "";
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  right: 0;
+  height: 18px;
+  background-repeat: repeat-x;
+  background-size: 40px 18px;
+  pointer-events: none;
+  z-index: 20;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #1c1917;
+}
+::-webkit-scrollbar-thumb {
+  background: #dc2626;
+  border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #b91c1c;
+}
